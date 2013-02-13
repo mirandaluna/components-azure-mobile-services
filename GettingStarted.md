@@ -25,6 +25,8 @@ public static MobileServiceClient MobileService = new MobileServiceClient(
 
 You can find value of your Mobile Service URL on the right-hand side of Dashboard and the value of your app key by clicking 'Manage Keys' at the bottom of the Dashboard.
 
+![](WAMS-Keys.png)
+
 To store data in that table, use the following code snippet (originally from the [September 2012 announcement](http://blog.xamarin.com/xamarin-partners-with-microsoft-to-support-azure-mobile-services-on-android-and-ios/) of the Xamarin and Windows Azure partnership):
 
 ```csharp 
