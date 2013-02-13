@@ -1,5 +1,8 @@
 ##Getting Started
 
+Mobile Services offers an easy way to store data in the cloud, authenticate users, and send push notifications.
+
+
 To use Mobile Services with your iOS app, you will need a Windows Azure account.  If you already have an account, login to the [Windows Azure management portal](https://manage.windowsazure.com/).  If you are new to Windows Azure, you can sign up for a 90-day free trial [here](https://www.windowsazure.com/en-us/pricing/free-trial/).
 
 To create a new Mobile Service after you've logged into the [management portal](https://manage.windowsazure.com/), select 'New' --> 'Compute' --> 'Mobile Service' --> 'Create.'  
@@ -8,7 +11,7 @@ To create a new Mobile Service after you've logged into the [management portal](
 
 Even though you will write the majority of your application in your preferred IDE, the management portal provides an easy way to work with three key Mobile Services features: storing data in the cloud, settuing up user authentication via third party services like Facebook, and sending push notifications.
 
-You can find the full Getting Started with Mobile Services tutorial [here](https://www.windowsazure.com/en-us/develop/mobile/tutorials/get-started/).
+You can find the full Getting Started with Mobile Services tutorial [here]( http://go.microsoft.com/fwlink/?LinkId=282374).
 
 ## Connect a Mobile Service to your MonoTouch app written in C# 
 
