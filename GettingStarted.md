@@ -30,6 +30,18 @@ You can find value of your Mobile Service URL on the right-hand side of Dashboar
 
 ![](WAMS-Keys.png)
 
+##Store Data in the Cloud
+
+When you create a Mobile Service, you'll be prompted to either create a new SQL database for that Mobile Service or connect your Mobile Service to an existing one. 
+
+You then add a table to that SQL database by going to the 'Data' tab and hitting 'Create.'
+
+![](WAMS-EmptyData.png)
+
+You'll then be prompted to set permissions for the table.
+
+![](WAMS-DataPermissions.png)
+
 To store data in that table, use the following code snippet (originally from the [September 2012 announcement](http://blog.xamarin.com/xamarin-partners-with-microsoft-to-support-azure-mobile-services-on-android-and-ios/) of the Xamarin and Windows Azure partnership):
 
 ```csharp 
