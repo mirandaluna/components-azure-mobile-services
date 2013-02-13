@@ -1,7 +1,5 @@
 ##Getting Started
 
-Use Mobile Services to store your app's data in the cloud, configure user authentication, and send push notifications. 
-
 To use Mobile Services with your iOS app, you will need a Windows Azure account.  If you already have an account, login to the [Windows Azure management portal](https://manage.windowsazure.com/).  If you are new to Windows Azure, you can sign up for a 90-day free trial [here](https://www.windowsazure.com/en-us/pricing/free-trial/).
 
 To create a new Mobile Service after you've logged into the [management portal](https://manage.windowsazure.com/), select 'New' --> 'Compute' --> 'Mobile Service' --> 'Create.'  
@@ -18,18 +16,14 @@ After you've created a Mobile Service, use the following to connect your project
 
 ```csharp
     using Microsoft.WindowsAzure.MobileServices;
-	
-	...
-
-    public static MobileServiceClient MobileService = new MobileServiceClient(
-    "https://yourMobileServiceName.azure-mobile.net/", 
-    "YOUR_APPLICATION_KEY"
-    );
-
+...
+public static MobileServiceClient MobileService = new MobileServiceClient(
+"https://yourMobileServiceName.azure-mobile.net/", 
+"YOUR_APPLICATION_KEY"
+);
+```
 
 You can find value of your Mobile Service URL on the right-hand side of Dashboard and the value of your app key by clicking 'Manage Keys' at the bottom of the Dashboard.
-
-![](WAMS-Keys.png)
 
 To store data in that table, use the following code snippet (originally from the [September 2012 announcement](http://blog.xamarin.com/xamarin-partners-with-microsoft-to-support-azure-mobile-services-on-android-and-ios/) of the Xamarin and Windows Azure partnership):
 
@@ -46,7 +40,7 @@ To store data in that table, use the following code snippet (originally from the
     this.table = MobileService.GetTable<TodoItem>();
     this.table.Where (ti => !ti.Complete).ToListAsync()
             .ContinueWith (t => { this.items = t.Result; }, scheduler);
-
+```
 
 ### Documentation
 

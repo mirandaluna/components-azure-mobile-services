@@ -15,8 +15,9 @@ Once you've either created a new SQL database for your Mobile Service or connect
  	          public string Text { get; set; }
  	}
 
- 	Item item = new Item { Text = "Awesome item" };
- 	await App.MobileService.GetTable<Item>().InsertAsync(item);
+Item item = new Item { Text = "Awesome item" };
+await App.MobileService.GetTable<Item>().InsertAsync(item);
+```
 
 Then use familiar LINQ syntax to query data.
 
@@ -34,6 +35,7 @@ To allow your users to login with their Facebook credentials, for example, you'd
 ```csharp
     var user = await App.MobileService
                     .LoginAsync(MobileServiceAuthenticationProvider.Facebook);
+```
 
 You can find the full Getting Started with Authentication tutorial [here](https://www.windowsazure.com/en-us/develop/mobile/tutorials/get-started-with-users-dotnet/).
 
@@ -44,8 +46,9 @@ To send push notifications, upload your developer certificate under the authenti
 
 Mobile Services allows you to easily send push notifications via Apple Push Notification Services (APNS)
 
+```js
     push.apns.send(devicetoken, { alert: "Hello to Apple World from Mobile Services!"});
-
+```
 
 You can find the full Getting Started with Push Notifications tutorial [here](https://www.windowsazure.com/en-us/develop/mobile/tutorials/get-started-with-push-ios/).
 
