@@ -4,7 +4,7 @@ To use Mobile Services with your iOS app, you will need a Windows Azure account.
 
 To create a new Mobile Service after you've logged into the [management portal](https://manage.windowsazure.com/), select 'New' --> 'Compute' --> 'Mobile Service' --> 'Create.'  
 
-![](WAMS-New.png)
+![](WAMS-New.PNG)
 
 Even though you will write the majority of your application in your preferred IDE, the management portal provides an easy way to work with three key Mobile Services features: storing data in the cloud, settuing up user authentication via third party services like Facebook, and sending push notifications.
 
